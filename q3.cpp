@@ -25,7 +25,11 @@ void exampleFunction(int param1, bool param2)
  * 
  * 
  */
-
+/**
+ * secret takes in three parameters, int x, int y, and boolean z
+ * if (x is greater than y) OR (z is true), it returns true
+ * else it returns false
+ */
 bool secret(int x, int y, bool z)
 {
     if (x > y || z) {
@@ -40,19 +44,19 @@ int main()
     // HOMEWORK TODO 2: give the results of each function call
 
     exampleFunction(5, true);
-    // result 1: ANSWER_HERE is printed
+    // result 1: "param1 is 5\n" is printed
 
     exampleFunction(10, false);
-    // result 2: ANSWER_HERE is printed
+    // result 2: "param1 is not printed\n" is printed
 
     bool result = secret(3, 4, false);
-    // result 3: result is ANSWER_HERE
+    // result 3: result is false
 
     result = secret(5, 2, false);
-    // result 4: result is ANSWER_HERE
+    // result 4: result is true
 
     result = secret(1, 1, true);
-    // result 5: result is ANSWER_HERE
+    // result 5: result is true
 
     return 0;
 }

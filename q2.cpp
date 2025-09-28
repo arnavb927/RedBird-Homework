@@ -14,9 +14,19 @@ int main() {
      */
 
     // prompts users to enter speed
-    cout << "Enter speed: ";
-    cin >> speed;
-
+    while (true) {
+        cout << "Enter speed: ";
+        cin >> speed;
+        if (speed>0) {
+            cout << "Moving forward" << endl;
+        }
+        else if (speed==0) {
+            cout << "Stopped" << endl;
+        }
+        else {
+            cout << "Moving backward" << endl;
+        }
+    }
     /**
      * HOMEWORK TODO 1: if speed is positive, print "Moving forward"
      * if speed is negative, print "Moving backward"
