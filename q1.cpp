@@ -17,7 +17,7 @@ int main() {
     // HOMEWORK TODO4: set f to be a*a-b*b
     f = a*a - b*b;
     // HOMEWORK TODO5: set result to if e is equal to f.
-    result = e=f;
+    result = e==f;
 
     // output all variables
     cout << "a: " << a << ", b: " << b << endl;
